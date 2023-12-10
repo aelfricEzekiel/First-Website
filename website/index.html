@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=7">
+    <meta name="description" content="my website">
+    <title>Internal Links</title>
+    <style>
+        .content h1 {
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+            font-weight: bold;
+            text-align: center;
+        }
+        .navigation {
+            margin: 0 0 50px 0;
+            text-align: center;
+        }
+        .navigation a {
+            text-decoration: none;
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+            color: #71eb34;
+        }
+        .navigation a:hover {
+            color: #349ceb;
+        }
+        .top {
+            border: 5px solid #34eb68;
+            background-color:#C9CC3F;
+            text-align: center;
+            padding: 30px;
+            margin: 0 0 100px 0;
+        }
+        .top .top-content h1{
+            color: #00A36C;
+        }
+        .top .top-content a {
+            text-decoration: none;
+            font-size: 20px;
+            font-weight: bold;
+            color: #F9F6EE;
+            cursor: pointer;
+        }
+        .top .top-content a:hover {
+            color: #800080;
+        }
+        .top .top-content img {
+            width: 100%;
+            height: 100%;
+            padding: 50px 0 50px 0;
+        }
+        .middle {
+            border: 5px solid #916782;
+            background-color: #40e0d0;
+            text-align: center;
+            padding: 30px;
+            margin: 0 0 100px 0;
+        }
+        .middle .middle-content h1 {
+            color: #4169E1;
+        }
+        .middle .middle-content a {
+            text-decoration: none;
+            font-size: 20px;
+            font-weight: bold;
+            color: #F9F6EE;
+            cursor: pointer;
+        }  
+        .middle .middle-content a:hover {
+            color: #800080;
+        }
+        .middle .middle-content img {
+            width: 100%;
+            height: 100%;
+            padding: 50px 0 50px 0;
+        }
+        .bottom {
+            border: 5px solid #330fb1;
+            background-color: #ffc0cb;
+            text-align: center;
+            padding: 30px;
+            margin: 0 0 100px 0;
+        }
+        .bottom .bottom-content h1 {
+            color: 	#6082B6;
+        }
+        .bottom .bottom-content a {
+            text-decoration: none;
+            font-size: 20px;
+            font-weight: bold;
+            color: #F9F6EE;
+            cursor: pointer;
+        }
+        .bottom .bottom-content a:hover {
+            color: #800080;
+        }
+        .bottom .bottom-content img {
+            width: 100%;
+            height: 100%;
+            padding: 50px 0 50px 0;
+        }
+    </style>
+</head>
+<body>
+    <div class="content">
+        <h1>This is Internal Page</h1>
+    </div>
+
+    <div class="navigation">
+        <a href="index.html">Click to go Internal Page</a> &nbsp; |
+        <a href="external.html">Click to go External Page</a> &nbsp;
+    </div>
+
+    <div class="top" id="mytop">
+        <div class="top-content">
+            <h1>This is a Top Content!</h1>
+            <img src="img/top2.jpg" alt="top picture">
+            <a href="#mytop">Click To Go Top</a> &nbsp; | &nbsp;
+            <a href="#mymiddle">Click To Go Middle</a> &nbsp; | &nbsp;
+            <a href="#mybottom">Click To Go Bottom</a>
+        </div>
+    </div>
+
+    <div class="middle" id="mymiddle">
+        <div class="middle-content">
+            <h1>This is a Middle Content!</h1>
+            <img src="img/middle.jpg" alt="middle picture">
+            <a href="#mytop">Click To Go Top</a> &nbsp; | &nbsp;
+            <a href="#mymiddle">Click To Go Middle</a> &nbsp; | &nbsp;
+            <a href="#mybottom">Click To Go Bottom</a>
+        </div>
+    </div>
+
+    <div class="bottom" id="mybottom">
+        <div class="bottom-content">
+            <h1>This is a Bottom Content!</h1>
+            <img src="img/bottom.jpg" alt="bottom picture">
+            <a href="#mytop">Click To Go Top</a> &nbsp; | &nbsp;
+            <a href="#mymiddle">Click To Go Middle</a> &nbsp; | &nbsp;
+            <a href="#mybottom">Click To Go Bottom</a>
+        </div>
+    </div>
+</body>
+</html>
