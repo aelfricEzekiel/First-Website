@@ -8,10 +8,19 @@
     <meta name="description" content="website">
     <title>Gallery Page</title>
     <style>
+        *{
+            box-sizing: border-box;
+        }
+        body {
+            margin: 0;
+        }
+        .row {
+            padding: 50px;
+        }
         .col1 {
             width: 25%;
             padding: 10px 10px 20px 10;
-            border: 2px solid red;
+            border: 2px solid #3483eb;
             background-color: white;
             box-shadow: 10px 10px 5px gray;
             float: left;
@@ -23,14 +32,55 @@
             font-weight: bold;
             font-size: 25px;
         }
+        .col1:hover {
+            transform: rotate(0deg);
+        }
+
+        .col2 {
+            width: 25%;
+            padding: 10px 10px 20px 10px;
+            border: 2px solid #e5eb34;
+            background-color: white;
+            box-shadow: 10px 10px 5px gray;
+            float: left;
+            -ms-transform: rotate(-8deg);
+            -webkit-transform: rotate(-8deg);
+            transform: rotate(-8deg);
+        }
+        .col2 span {
+            font-weight: bold;
+            font-size: 25px;
+        }
+        .col2:hover{
+            transform: rotate(0deg);
+        }
     </style>
 </head>
+
 <body>
     <div class="row">
         <div class="col1">
             <img src="img/batanes.jpg" alt="batanes" width="100%">
             <span>Batanes</span>
             <p class="decs1">The island group is located approximately 162 kilometres (101 mi) north of the Luzon mainland and about 190 kilometres (120 miles) south of Taiwan (Pingtung County), separated from the Babuyan Islands of Cagayan Province by the Balintang Channel, and from Taiwan by the Bashi Channel.</p>
+        </div>
+
+        <div class="col2">
+            <img src="img/coron.jpg" alt="Coron Palawan" width="100%">
+            <span>Coron Island</span>
+            <p class="decs2">Coron is the third-largest island in the Calamian Islands in northern Palawan in the Philippines. The island is part of the larger municipality of the same name. It is about 170 nautical miles (310 km) southwest of Manila and is known for several Japanese shipwrecks of World War II vintage. Because of its unique ecological features, the entire area is protected by several legal proclamations.</p>
+        </div>
+
+        <div class="col1">
+            <img src="img/batanes.jpg" alt="batanes" width="100%">
+            <span>Batanes</span>
+            <p class="decs1">The island group is located approximately 162 kilometres (101 mi) north of the Luzon mainland and about 190 kilometres (120 miles) south of Taiwan (Pingtung County), separated from the Babuyan Islands of Cagayan Province by the Balintang Channel, and from Taiwan by the Bashi Channel.</p>
+        </div>
+
+        <div class="col2">
+            <img src="img/coron.jpg" alt="Coron Palawan" width="100%">
+            <span>Coron Island</span>
+            <p class="decs2">Coron is the third-largest island in the Calamian Islands in northern Palawan in the Philippines. The island is part of the larger municipality of the same name. It is about 170 nautical miles (310 km) southwest of Manila and is known for several Japanese shipwrecks of World War II vintage. Because of its unique ecological features, the entire area is protected by several legal proclamations.</p>
         </div>
     </div>
 </body>
