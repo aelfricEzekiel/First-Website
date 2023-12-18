@@ -146,6 +146,7 @@ body {
 }
 /*External CSS*/
 .header-container {
+    margin: 20px 0 0 0;
     background-color: #C0C0C0;
     position: relative;
     box-shadow: 2px 5px 10px#6c6377;
@@ -177,7 +178,7 @@ body {
     color: #F9F6EE;
 }
 .content-box {
-    margin: 10px 0 0 0;
+    margin: 0 0 20px 0;
     overflow: hidden;
     position: relative;
 }
