@@ -1,0 +1,114 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body {
+    background-image: url("img/bg2.jpg");
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
+}
+.container-box {
+    padding: 10px;
+    display: block;
+}
+.container-box .header-box {
+    height: 3em;
+    position: relative;
+}
+.header-box .port-box {
+    position: absolute;
+    left: 20px;
+    top: 5px;
+    cursor: pointer;
+}
+.port-box h1 {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 30px;
+    font-weight: bold;
+    color: pink;
+}
+.header-box .nav-box {
+    display: inline-block;
+    position: absolute;
+    bottom: 3px;
+    left: 600px;
+    padding: 10px;
+}
+.header-box .nav-box a {
+    text-decoration: none;
+    color: pink;
+    padding: 30px;
+    cursor: pointer;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 20px;
+}
+.nav-box a:hover {
+    color: white;
+}
+/*Login CSS*/
+.login-container {
+    margin: 62px 300px 100px 300px;
+    box-shadow: 0 0 20px #088da5;
+}
+.login-container .nav {
+    text-align: center;
+    padding: 30px;
+    background-color: #e8d7ba;
+}
+.nav a {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 30px;
+    color: #191970;
+    cursor: pointer;
+}
+.nav a:hover {
+    color: white;
+}
+.login-container .myform {
+    background: #b5a79b;
+    padding: 30px 0 70px 0;
+    text-align: center;
+    width: 100%;
+}
+.myform label {
+    font-size: 30px;
+    font-weight: bold;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color: #191970;
+}
+.myform input[type=email] {
+    width: 50%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    border: 1px solid white;    
+    border-radius: 100px;
+    box-sizing: border-box;
+    cursor: pointer;
+}
+.myform input[type=password] {
+    width: 50%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    border: 1px solid white;    
+    border-radius: 100px;
+    box-sizing: border-box;
+    cursor: pointer;
+}
+.myform input[type=submit] {
+    width: 50%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    background: #4166f5;
+    color: white;
+    border: none;    
+    border-radius: 4px;
+    box-sizing: border-box;
+    cursor: pointer;
+}
+.myform input[type=submit]:hover {
+    color: yellow;
+    background-color: #294b5d;
+}

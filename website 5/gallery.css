@@ -1,0 +1,110 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body {
+    background-image: url("img/bg2.jpg");
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
+}
+.container-box {
+    padding: 10px;
+    display: block;
+}
+.container-box .header-box {
+    height: 3em;
+    position: relative;
+}
+.header-box .port-box {
+    position: absolute;
+    top: 5px;
+    left: 20px;
+}
+.port-box h1 {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 30px;
+    font-weight: bold;
+    color: pink;
+}
+.header-box .nav-box {
+    display: inline-block;
+    position: absolute;
+    bottom: 3px;
+    left: 600px;
+    padding: 10px;
+}
+.header-box .nav-box a {
+    text-decoration: none;
+    color: pink;
+    padding: 30px;
+    cursor: pointer;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 20px;
+}
+.nav-box a:hover {
+    color: white;
+}
+/*Gallery CSS*/
+.row {
+    margin: 40px 0 0 0;
+    padding: 50px;
+}
+.col1 {
+    width: 23%;
+    padding: 10px 10px 20px 10;
+    border: 2px solid #3483eb;
+    background-color: white;
+    box-shadow: 0 0 20px gray;
+    float: left;
+    -ms-transform: rotate(7deg);
+    -webkit-transform: rotate(7deg);
+    transform: rotate(7deg);
+}
+.col1 span{ 
+    font-weight: bold;
+    font-size: 25px;
+}
+.col1:hover {
+    transform: rotate(0deg);
+}
+.col2 {
+    width: 23%;
+    padding: 10px 10px 20px 10px;
+    border: 2px solid #e5eb34;
+    background-color: white;
+    box-shadow: 0 0 20px gray;
+    float: left;
+    -ms-transform: rotate(-8deg);
+    -webkit-transform: rotate(-8deg);
+    transform: rotate(-8deg);
+}
+.col2 span {
+    font-weight: bold;
+    font-size: 25px;
+}
+.col2:hover{
+    transform: rotate(0deg);
+}
+.row::after {
+    content: " ";
+    display: table;
+    clear: both;
+}
+
+@media screen and (max-width: 600px){
+    .col1{
+        width: 100%;
+    }
+    .col2{
+        width: 100%;
+    }
+}
+@media screen and(max-width: 700px){
+    .col1{
+        width: 100%;
+    }
+    .col2{
+        width: 100%;
+    }
+}

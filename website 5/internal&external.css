@@ -1,0 +1,201 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body {
+    background-image: url("img/bg2.jpg");
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
+}
+.container-box {
+    padding: 10px;
+    display: block;
+}
+.container-box .header-box {
+    height: 3em;
+    position: relative;
+}
+.header-box .port-box {
+    position: absolute;
+    top: 5px;
+    left: 20px;
+}
+.port-box h1 {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 30px;
+    font-weight: bold;
+    color: pink;
+}
+.header-box .nav-box {
+    display: inline-block;
+    position: absolute;
+    bottom: 3px;
+    left: 600px;
+    padding: 10px;
+}
+.header-box .nav-box a {
+    text-decoration: none;
+    color: pink;
+    padding: 30px;
+    cursor: pointer;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 20px;
+}
+.nav-box a:hover {
+    color: white;
+}
+/*internal & external CSS*/
+.content {
+    margin: 100px 0 0 0;
+}
+.content h1{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-weight: bold;
+    text-align: center;
+    color: #00FF7F;
+}
+.navigation {
+    margin: 0 0 100px 0;
+    text-align: center;
+}
+.navigation a {
+    text-decoration: none;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color: #71eb34;
+    cursor: pointer;
+}
+.navigation a:hover {
+    color: #349ceb;
+}
+.top {
+    border: 5px solid #34eb68;
+    background-color:#C9CC3F;
+    text-align: center;
+    padding: 30px;
+    margin: 0 0 300px 0;
+}
+.top .top-content h1{
+    color: #00A36C;
+}
+.top .top-content a {
+    text-decoration: none;
+    font-size: 20px;
+    font-weight: bold;
+    color: #F9F6EE;
+    cursor: pointer;
+}
+.top .top-content a:hover {
+    color: #800080;
+}
+.top .top-content img {
+    width: 100%;
+    height: 100%;
+    padding: 50px 0 50px 0;
+}
+.middle {
+    border: 5px solid #916782;
+    background-color: #40e0d0;
+    text-align: center;
+    padding: 30px;
+    margin: 0 0 300px 0;
+}
+.middle .middle-content h1 {
+    color: #4169E1;
+}
+.middle .middle-content a {
+    text-decoration: none;
+    font-size: 20px;
+    font-weight: bold;
+    color: #F9F6EE;
+    cursor: pointer;
+}  
+.middle .middle-content a:hover {
+    color: #800080;
+}
+.middle .middle-content img {
+    width: 100%;
+    height: 100%;
+    padding: 50px 0 50px 0;
+}
+.bottom {
+    border: 5px solid #330fb1;
+    background-color: #ffc0cb;
+    text-align: center;
+    padding: 30px;
+    margin: 0 0 100px 0;
+}
+.bottom .bottom-content h1 {
+    color: 	#6082B6;
+}
+.bottom .bottom-content a {
+    text-decoration: none;
+    font-size: 20px;
+    font-weight: bold;
+    color: #F9F6EE;
+    cursor: pointer;
+}
+.bottom .bottom-content a:hover {
+    color: #800080;
+}
+.bottom .bottom-content img {
+    width: 100%;
+    height: 100%;
+    padding: 50px 0 50px 0;
+}
+/*External CSS*/
+.header-container {
+    background-color: #C0C0C0;
+    position: relative;
+    box-shadow: 2px 5px 10px#6c6377;
+    height: 4.2em;
+}
+.header-container .content {
+    position: absolute;
+    bottom: 15px;
+    left: 30px;
+}
+.content .heading{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 30px;
+    color: #1E90FF;
+}
+.header-container .navigation {
+    position: absolute;
+    top: 20px;
+    left: 500px;
+}
+.navigation .nav-links {
+    text-decoration: none;
+    color: #1E90FF;
+    padding: 0 30px 0 30px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 20px;
+}
+.navigation a:hover {
+    color: #F9F6EE;
+}
+.content-box {
+    margin: 10px 0 0 0;
+    overflow: hidden;
+    position: relative;
+}
+.content-box .image-box img {
+    width: 100%;
+    object-fit: cover;
+}
+.content-box p {
+    position: absolute;
+    bottom: 500px;
+    left: 200px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 80px;
+    color: snow;
+}
+.content-box p::before{
+    content: "";
+}
+.content-box p::after{
+    content: " World";
+    color: aquamarine;
+}
