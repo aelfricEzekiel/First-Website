@@ -48,24 +48,24 @@ body {
 }
 /*internal & external CSS*/
 .content {
-    margin: 100px 0 50px 0;
+    margin: 100px 0 100px 0;
 }
-.content h1{
+.content .internal-heading{
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     font-weight: bold;
     text-align: center;
     color: #00FF7F;
 }
-.navigation {
+.navigation-box{
     margin: 0 0 100px 0;
     text-align: center;
 }
-.navigation #nav{
+.navigation-box #nav{
     padding: 20px;
     background-color: #b4d7ff;
     border-radius: 50px;
 }
-.navigation a {
+.navigation-box .navlink {
     text-decoration: none;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     font-size: 20px;
@@ -73,9 +73,9 @@ body {
     color: #8e9a03;
     cursor: pointer;
 }
-.navigation .nav-link:hover {
+.navigation-box .navlink:hover {
     color: black;
-    box-shadow: 0 0 20px blue;
+    box-shadow: 0 0 20px #3dd5f0;
 }
 .top {
     border: 5px solid #34eb68;
@@ -162,7 +162,7 @@ body {
 }
 .header-container .content {
     position: absolute;
-    bottom: -32px;
+    bottom: -82px;
     left: 30px;
 }
 .content .heading{
