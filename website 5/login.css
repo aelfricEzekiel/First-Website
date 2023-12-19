@@ -48,7 +48,7 @@ body {
 }
 /*Login CSS*/
 .login-container {
-    margin: 62px 300px 100px 300px;
+    margin: 55px 300px 100px 300px;
     box-shadow: 0 0 20px #088da5;
 }
 .login-container .nav {
@@ -88,6 +88,9 @@ body {
     box-sizing: border-box;
     cursor: pointer;
 }
+.myform input[type=email]:hover {
+    box-shadow: 0 0 10px#0394fc;
+}
 .myform input[type=password] {
     width: 50%;
     padding: 12px 20px;
@@ -97,18 +100,22 @@ body {
     box-sizing: border-box;
     cursor: pointer;
 }
+.myform input[type=password]:hover {
+    box-shadow: 0 0 10px#0394fc;
+}
 .myform input[type=submit] {
-    width: 50%;
+    width: 40%;
     padding: 12px 20px;
     margin: 8px 0;
     background: #4166f5;
     color: white;
     border: none;    
-    border-radius: 4px;
+    border-radius: 100px;
     box-sizing: border-box;
     cursor: pointer;
 }
 .myform input[type=submit]:hover {
     color: yellow;
     background-color: #294b5d;
+    box-shadow: 0 0 10px #4293f5;
 }

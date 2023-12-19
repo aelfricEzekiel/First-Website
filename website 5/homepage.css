@@ -58,21 +58,15 @@ body {
     height: 100px;
     background-color: #79cecc;
 }
-.header-logo p{
-    position: absolute;
-    top: 40px;
-    left: 30px;
-    font-size: 30px;
-    font-family: sans-serif;
-    font-weight: bold;
-    color:  #c83cbc;
-    cursor: pointer;
-}
-.header-logo p:hover {
-    color: white;
-}
 .main-header .header-logo {
-    float: left;
+    display: inline-block;
+    position: absolute;
+    left: 5px;
+    bottom: -20px;
+}
+.header-logo img {
+    width: 150px;
+    mix-blend-mode: multiply;
 }
 .main-header .header-nav{
     position: absolute;
@@ -85,12 +79,12 @@ body {
     font-family: sans-serif;
     padding: 20px 20px 0 0;
     font-weight: bold;
-    color:  #c83cbc;
+    color: #000000;
     text-decoration: none;
     cursor: pointer;
 }
 .main-header .header-nav a:hover {
-    color: #d8cbf8;
+    color: white;
 }
 .main-pic img {
     width: 100%;
