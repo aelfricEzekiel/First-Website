@@ -96,14 +96,14 @@ body {
 }
 .reg-text-box {
     border-radius: 20px;
-    margin: 80px 300px 0 400px;
+    margin: 90px 300px 0 400px;
     background-color: #e8d7ba;
     height: 450px;
     display: block;
     width: 600px;
     box-shadow: 0 0 10px #088da5;
     height: 480px;
-    padding: 30px 0;
+    padding: 40px 0 0 0;
     text-align: center;
 }
 .reg-text-box a {
@@ -111,17 +111,19 @@ body {
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     font-size: 30px;
     display: inline-block;
+    font-style: italic;
     color: black;
     padding: 0 10px;
 }
 .reg-text-box a:hover {
     color: white;
 }
-/*registration input*/
-.email-box {
+/*registration box input*/
+.register-container .email-box {
     display: inline-block;
     position: relative;
 }
+/* Input email */
 .email-box .input-email {
     position: absolute;
     left: 450px;
@@ -132,18 +134,136 @@ body {
 .email-box .input-email [for=email]{
     position: absolute;
     bottom: 10px;
-    left: 50px;
+    left: 90px;
     font-family:Verdana, Geneva, Tahoma, sans-serif Poppins;
-    font-size: 30px;
+    font-size: 23px;
+    font-style: italic;
 }
 .input-email input[type=email] {
     position: absolute;
-    left: 50px;
+    left: 90px;
     width: 300px;
-    padding: 15px 10px;
+    padding: 10px 10px;
     border-radius: 5px;
     border: none;
 }
 .input-email input[type=email]:focus{ 
-    outline-color: white;
+    outline-color: black;
+}
+/* input password */
+.register-container .pass-container {
+    display: inline-block;
+    position: relative;
+}   
+.pass-container .input-pass {
+    position: absolute;
+    bottom: 17em;
+    left: 536px;
+    display: block;
+}
+.input-pass [for=pass]{
+    font-family: Verdana, Geneva, Tahoma, sans-serif Poppins;
+    font-size: 23px;
+    position: absolute;
+    bottom: 40px;
+    display: inline-block;
+    font-style: italic;
+}
+.input-pass input[type=password]{
+    display: inline-block;
+    padding: 10px 10px;
+    position: absolute;
+    bottom: 1px;
+    width: 300px;
+    border-radius: 5px;
+    border: none;
+}
+.input-pass input[type=password]:focus{
+    outline-color: black;
+}
+.registration-container .con-pass-container {
+    display: inline-block;
+    position: relative;
+}
+.con-pass-container .input-con-pass {
+    position: absolute;
+    bottom: 15em;
+    left: 540px;
+}
+.input-con-pass [for=con-pass]{
+    font-family: Verdana, Geneva, Tahoma, sans-serif Poppins;
+    font-style: italic;
+    font-size: 23px;
+    position: absolute;
+    bottom: 30px;
+}
+.input-con-pass input[type=password]{
+    width: 300px;
+    padding: 10px 10px;
+    border: none;
+    border-radius: 5px;
+    position: relative;
+    top: 10px;
+}
+.input-con-pass input[type=password]:focus {
+    outline-color:black;
+}
+.register-container .gender-container {
+    position: relative;
+    display: inline-block;
+}
+.gender-container .input-rad-male-box {
+    width: 70px;
+    background-color: white;
+    padding: 10px;
+    position: absolute;
+    bottom: 150px;
+    border-radius: 5px;
+    left: 540px;
+}
+.input-rad-male-box [for=male] {
+    float: left;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 15px;
+}
+.input-rad-male-box input[type=radio]{
+    position: absolute;
+    top: 12px;
+    right: 15px;
+}
+.gender-container .input-rad-female-box {
+    width: 70px;
+    background-color: white;
+    padding: 10px;
+    position: absolute;
+    bottom: 150px;
+    border-radius: 5px;
+    left: 650px;
+}
+.input-rad-female-box [for=female]{
+    float: left;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 15px;
+}
+.input-rad-female-box input[type=radio]{
+    position: absolute;
+    top: 12px;
+    right: 10px;
+}
+.register-container .submit-box{
+    position: absolute;
+    bottom: 110px;
+    left: 570px;
+    padding: 5px;
+}
+.submit-box input[type=submit] {
+    width: 250px;
+    padding: 10px 10px;
+    background-color: white;
+    position: absolute;
+    top: -21px;
+    border: none;
+    border-radius: 5px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 15px;
 }

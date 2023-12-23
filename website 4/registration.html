@@ -11,20 +11,39 @@
 <body>
     <div class="register-container">
         <div class="reg-text-box">
-            <a href="login.html">Login</a>
-            <a href="registration.html">Registration</a>
+            <a href="login.html" target="_self">Login</a>
+            <a href="registration.html" target="_self">Register</a>
         </div>
         <div class="email-box">
             <div class="input-email">
                 <label for="email">Email</label><br>
-                <input type="email" placeholder="Enter email" name="email" required>
+                <input type="email" placeholder="Enter Email" name="email" required>
             </div>
         </div>
         <div class="pass-container">
             <div class="input-pass">
                 <label for="pass">Password</label><br>
-                <input type="password" name="pass" placeholder="Enter password" required>
+                <input type="password" name="pass" placeholder="Enter Password" required>
             </div>
+        </div>
+        <div class="con-pass-container">
+            <div class="input-con-pass">
+                <label for="con-pass">Confirm Password</label><br>
+                <input type="password" name="con-pass" placeholder="Confirm Password" id="conPass" required>
+            </div>
+        </div>
+        <div class="gender-container">
+            <div class="input-rad-male-box">
+                <label for="male">Male</label>
+                <input type="radio" name="male" id="genMale" value="Male" required>
+            </div>
+            <div class="input-rad-female-box">
+                <label for="female">Female</label>
+                <input type="radio" name="female" id="genFemale" value="Female" required>
+            </div>
+        </div>
+        <div class="submit-box">
+            <input type="submit" name="login" id="login" value="Register Account">
         </div>
     </div>
 </body>
