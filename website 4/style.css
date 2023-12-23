@@ -1,19 +1,24 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@1,200&display=swap');
 *{
     margin: 0;
     padding: 0;
 }
 body {
-    background-image: url("img/bg6.jpg");
+    background-image: url("img/bg7.jpg");
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
+    background-attachment: fixed;
 }
 .login-container {
-    margin: 120px 350px 100px 350px;
+    display: block;
+    margin: 150px 380px 0 370px;
     box-shadow: 0 0 30px #088da5;
     width: 50%;
+    position: relative;
 }
 .login-container .nav {
+    display: block;
     text-align: center;
     padding: 30px;
     background-color: #e8d7ba;
@@ -82,4 +87,63 @@ body {
     color: yellow;
     background-color: #42f58a;
     box-shadow: 0 0 20px #4290f5;
+}
+/*Registration CSS*/
+.registration-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.reg-text-box {
+    border-radius: 20px;
+    margin: 100px 300px 0 400px;
+    background-color: #e8d7ba;
+    height: 450px;
+    display: block;
+    width: 600px;
+    box-shadow: 0 0 10px #088da5;
+    height: 480px;
+    padding: 20px 0;
+    text-align: center;
+}
+.reg-text-box a {
+    text-decoration: none;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 30px;
+    display: inline-block;
+    color: black;
+    padding: 0 10px;
+}
+.reg-text-box a:hover {
+    color: white;
+}
+/*registration input*/
+.email-box {
+    display: inline-block;
+    position: relative;
+}
+.email-box .input-email {
+    position: absolute;
+    left: 450px;
+    bottom: 380px;
+    padding: 5px;
+    display: block;
+}
+.email-box .input-email [for=email]{
+    position: absolute;
+    bottom: 15px;
+    font-family:Verdana, Geneva, Tahoma, sans-serif Poppins;
+    font-size: 30px;
+}
+.input-email input[type=email] {
+    position: absolute;
+    left: 50px;
+    width: 300px;
+    padding: 15px 10px;
+    border-radius: 5px;
+    border: none;
+}
+.input-email input[type=email]:focus{ 
+    color: black;
+    outline-color: white;
 }
