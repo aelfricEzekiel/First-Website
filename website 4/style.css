@@ -96,14 +96,14 @@ body {
 }
 .reg-text-box {
     border-radius: 20px;
-    margin: 100px 300px 0 400px;
+    margin: 80px 300px 0 400px;
     background-color: #e8d7ba;
     height: 450px;
     display: block;
     width: 600px;
     box-shadow: 0 0 10px #088da5;
     height: 480px;
-    padding: 20px 0;
+    padding: 30px 0;
     text-align: center;
 }
 .reg-text-box a {
@@ -131,7 +131,8 @@ body {
 }
 .email-box .input-email [for=email]{
     position: absolute;
-    bottom: 15px;
+    bottom: 10px;
+    left: 50px;
     font-family:Verdana, Geneva, Tahoma, sans-serif Poppins;
     font-size: 30px;
 }
@@ -144,6 +145,5 @@ body {
     border: none;
 }
 .input-email input[type=email]:focus{ 
-    color: black;
     outline-color: white;
 }
