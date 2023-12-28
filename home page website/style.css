@@ -51,7 +51,7 @@
     bottom: -10px;
     transform: scaleX(0);
     transform-origin: center;
-    transition: .40s;
+    transition: .20s;
 }
 .navbar ul li:hover::after {
     transform-origin: center;
@@ -133,6 +133,7 @@ button:hover {
     grid-template-columns: repeat(3, 1fr);
     grid-gap: 50px;
     margin: 25px auto;
+
 }
 /* Card 1 */
 .blog-section .section-content .cards .card {
@@ -168,6 +169,7 @@ button:hover {
     padding: 8px 15px;
     margin-left: 20px;
     color: black;
+    border-radius: 20px;
 }
 .blog-section .section-content .cards .card .posted-date p {
     font-weight: 600;
@@ -212,6 +214,7 @@ button:hover {
     padding: 8px 15px;
     margin-left: 20px;
     color: black;
+    border-radius: 20px;
 }
 .blog-section .section-content .cards .card2 .posted-date p {
     font-weight: 600;
@@ -255,6 +258,7 @@ button:hover {
     background-color: goldenrod;
     padding: 8px 15px;
     margin-left: 20px;
+    border-radius: 20px;
     color: black;
 }
 .blog-section .section-content .cards .card3 .posted-date p {
