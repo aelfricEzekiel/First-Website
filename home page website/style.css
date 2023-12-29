@@ -331,7 +331,7 @@ button:hover {
     overflow: hidden;
 }
 .about-image img {
-    max-width: 80%;
+    max-width:70%;
     height: auto;
     display: block;
     transition: 0.5s ease;
@@ -384,5 +384,16 @@ button:hover {
     .about {
         padding: 20px;
         flex-direction: column;
+    }
+    .about-image {
+        margin-right: 0px;
+        margin-bottom: 20px;
+    }
+    .about-content {
+        padding: 0px;
+        font-size: 16px;
+    }
+    .about-content .read-more{
+        font-size: 16px;
     }
 }
