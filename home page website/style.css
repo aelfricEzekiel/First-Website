@@ -5,7 +5,7 @@
 }
 .banner {
     width: 100%;
-    height: 130vh;
+    height: 150vh;
     background-image: linear-gradient(rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0.75)), url("img/bg2.jpg");
     background-size: cover;
     background-position: center;
@@ -279,5 +279,110 @@ button:hover {
 @media screen and (max-width: 768px){
     .blog-section .section-content .cards{
         grid-template-columns: 1fr;
+    }
+}
+/* About us CSS */
+.about-section{
+    width: 100%;
+}
+.heading {
+    width: 90%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+    padding-top: 20px;
+}
+.heading h1 {
+    font-size: 50px;
+    color: white;
+    margin-bottom: 25px;
+    position: relative;
+}
+.heading h1::after {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 4px;
+    display: block;
+    margin: 0 auto;
+    background-color: red;
+}
+.heading p {
+    font-size: 18px;
+    color: white;
+    margin-bottom: 35px;
+}
+.container {
+    width: 90%;
+    margin-bottom: 100px;
+    padding: 50px;
+}
+.about {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+}
+.about-image {
+    flex: 1;
+    margin-right: 40px;
+    overflow: hidden;
+}
+.about-image img {
+    max-width: 80%;
+    height: auto;
+    display: block;
+    transition: 0.5s ease;
+}
+.about-image:hover img{
+    transform: scale(1.2);
+}
+.about-content {
+    flex: 1;
+}
+.about-content h2{
+    font-size: 50px;
+    margin-bottom: 15px;
+    color: red;
+}
+.about-content p{
+    font-size: 18px;
+    line-height: 2.0;
+    color: white;
+}
+.about-content .read-more {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: red;
+    color: white;
+    font-size: 15px;
+    text-decoration: none;
+    border-radius: 25px;
+    margin-top: 15px;
+    transition: 0.3s ease;
+}
+.about-content .read-more:hover {
+    background-color: black;
+    color: white;
+}
+@media screen and (max-width: 768px){
+    .heading {
+        padding: 0 20px;
+    }
+    .heading h1 {
+        font-size: 36px;
+    }
+    .heading p {
+        font-size: 17px;
+        margin-bottom: 0px;
+    }
+    .container {
+        padding: 0px;
+    }
+    .about {
+        padding: 20px;
+        flex-direction: column;
     }
 }
