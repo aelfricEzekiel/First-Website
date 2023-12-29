@@ -171,6 +171,10 @@ button:hover {
     color: black;
     border-radius: 20px;
 }
+.blog-section .section-content .cards .card .blog-view a:hover {
+    background-color: black;
+    color: white;
+}
 .blog-section .section-content .cards .card .posted-date p {
     font-weight: 600;
     position: absolute;
@@ -225,6 +229,10 @@ button:hover {
     background-color: goldenrod;
     padding: 6px 15px;
 }
+.blog-section .section-content .cards .card2 .blog-view a:hover {
+    background-color: black;
+    color: white;
+}
 /* Card 3 */
 .blog-section .section-content .cards .card3{
     width: 100%;
@@ -260,6 +268,10 @@ button:hover {
     margin-left: 20px;
     border-radius: 20px;
     color: black;
+}
+.blog-section .section-content .cards .card3 .blog-view a:hover {
+    background-color: black;
+    color: white;
 }
 .blog-section .section-content .cards .card3 .posted-date p {
     font-weight: 600;
