@@ -610,5 +610,52 @@ button:hover {
     transform: scale(0);
     position: absolute;
     transition: 0s;
-    
+}
+.gallery #check4:checked ~.gallery-container .photo-gallery .Bonding {
+    opacity: 1;
+    transform: scale(1);
+    position: relative;
+}
+.gallery #check4:checked ~.gallery-container .photo-gallery .Events,
+.gallery #check4:checked ~.gallery-container .photo-gallery .Outing{
+    opacity: 1;
+    transform: scale(0);
+    position: absolute;
+    transition: 0s;
+}
+@media screen and (max-width: 992px){
+    .gallery .photo-gallery {
+        width: 90%;
+        margin: auto;
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        grid-gap: 20px;
+    }
+}
+@media screen and (max-width:768px ){
+    .gallery h1 {
+        font-weight: normal;
+        position: relative;
+        font-size: 28px;
+        margin: 40px 0;
+    }
+    .gallery h3 {
+        display: none;
+    }
+    .gallery label {
+        height: 100%;
+        font-size: 11px;
+        color: gray;
+        cursor: pointer;
+        transition: color .5s;
+    }
+    .gallery label:hover {
+        color: black;
+    }
+    .gallery .photo-gallery {
+        width: 80%;
+        margin: auto;
+        display: grid;
+        grid-template-columns: 1fr;
+    }
 }
