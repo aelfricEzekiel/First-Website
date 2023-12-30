@@ -5,7 +5,7 @@
 }
 .banner {
     width: 100%;
-    height: 150vh;
+    height: 190vh;
     background-image: linear-gradient(rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0.75)), url("img/bg2.jpg");
     background-size: cover;
     background-position: center;
@@ -225,7 +225,7 @@ button:hover {
     position: absolute;
     top: 0;
     left: 0;
-    display: inlin-block;
+    display: inline-block;
     background-color: goldenrod;
     padding: 6px 15px;
 }
@@ -278,17 +278,65 @@ button:hover {
     position: absolute;
     top: 0;
     left: 0;
-    display: inlin-block;
+    display: inline-block;
     background-color: goldenrod;
     padding: 6px 15px;
 }
-
+/* News Page Media Screen */
 @media screen and (max-width: 992px){
     .blog-section .section-content .cards {
         grid-template-columns: repeat(2 1fr);
     }
 }
 @media screen and (max-width: 768px){
+    .banner {
+        width: 100%;
+        height: 270vh;
+    }
+    .navbar ul li {
+        display: flex;
+        flex-direction: column;
+        padding: 10px 0;
+    }
+    .navbar ul li::after{
+        content: "";
+        position: absolute;
+        left: 0;
+        bottom: 5px;
+        background-color: red;
+        width: 0;
+        transform: scaleX(0);
+        transform-origin: center;
+        transition: 0.2s ease;
+    }
+    .navbar ul #home:hover::after{
+        transform: scaleX(1);
+        transform-origin: center;
+        width:55%;
+    }
+    .navbar ul #newspage:hover::after{
+        transform: scaleX(1);
+        transform-origin: center;
+        width:55%;
+    }
+    .navbar ul #about:hover::after{
+        transform: scaleX(1);
+        transform-origin: center;
+        width:85%;
+    }
+    .navbar ul #gallery:hover::after{
+        transform: scaleX(1);
+        transform-origin: center;
+        width:80%;
+    }
+    .navbar ul #testimony:hover::after{
+        transform: scaleX(1);
+        transform-origin: center;
+        width:100%;
+    }
+    .navbar ul li a {
+        color: white;
+    }
     .blog-section .section-content .cards{
         grid-template-columns: 1fr;
     }
@@ -343,7 +391,7 @@ button:hover {
     overflow: hidden;
 }
 .about-image img {
-    max-width:70%;
+    max-width: 100%;
     height: auto;
     display: block;
     transition: 0.5s ease;
@@ -361,7 +409,7 @@ button:hover {
 }
 .about-content p{
     font-size: 18px;
-    line-height: 2.0;
+    line-height: 1.8;
     color: white;
 }
 .about-content .read-more {
@@ -408,4 +456,139 @@ button:hover {
     .about-content .read-more{
         font-size: 16px;
     }
+}
+.gallery{
+    margin-bottom: 200px;
+    padding-top: 10px;
+    overflow: hidden;
+}
+.gallery input {
+    display: none;
+}
+.gallery .gallery-container{
+    width: 100%;
+    text-align: center;
+}
+.gallery h1{
+    font-weight: normal;
+    position: relative;
+    font-size: 35px;
+    margin: 40px 0;
+}
+.gallery h1::before{
+    content: "";
+    position: absolute;
+    bottom: -5px;
+    left: 50%;
+    width: 210px;
+    height: 3px;
+    background-color: red;
+    transform: translateX(-50%);
+    animation: animate 4s linear infinite;
+}
+@keyframes animate {
+    0%{
+        width: 0;
+    }
+    50%{
+        width: 100px;
+    }
+    100%{
+        width: 200px;
+    }
+}
+.gallery .top-content {
+    background-color: white;
+    width: 90%;
+    margin: 0 auto 20px auto;
+    height: 60px;
+    display: flex;
+    align-items: center;
+    border-radius: 5px;
+    box-shadow: 3px 3px 5px lightgray;
+}
+.gallery h3{
+    height: 100%;
+    line-height: 60px;
+    padding: 0 50px;
+    background-color: lightgray;
+    color: red;
+}
+.gallery label{
+    display: inline-block;
+    height: 100%;
+    margin: 0 20px;
+    line-height: 60px;
+    font-size: 18px;
+    color: red;
+    cursor: pointer;
+    transition: color .5s;
+}
+.gallery label:hover {
+    color: black;
+}
+.gallery .photo-gallery {
+    width: 90%;
+    margin: auto;
+    display: grid;
+    grid-template-columns: repeat(4, 2fr);
+    grid-gap: 20px;
+}
+.gallery .pic {
+    position: relative;
+    height: 230px;
+    border-radius: 10px;
+    box-shadow: 5px 5px 10px gray;
+    cursor: pointer;
+    transition: .5s;
+}
+.gallery .pic img {
+    width: 100%;
+    height: 100%;
+    border-radius: 10px;
+    transition: .5s;
+}
+.gallery .pic::before {
+    content: "Photo Gallery";
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+    font-weight: bold;
+    width: 100%;
+    margin-top: 100px;
+    opacity: 0;
+    transform: .3s;
+    transition-delay: .2s;
+    z-index: 1;
+}
+.gallery .pic::after{
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    border-radius: 10px;
+    width: 100%;
+    height: 0;
+    background-color: rgb(0, 0, 0,.4);
+    transition: .3s;
+}
+.gallery .pic:hover::after {
+    height: 100%;
+}
+.gallery .pic:hover::before {
+    margin-top: 0;
+    opacity: 1;
+}
+.gallery #check1:checked ~ .gallery-container .photo-gallery .pic {
+    opacity: 1;
+    transform: scale(1);
+    position: relative;
+    transition: .5s;    
+}
+.gallery #check2:checked ~ .gallery-container .photo-gallery .Events{
+    opacity: 1;
+    transform: scale(1);
+    position: relative;
 }
