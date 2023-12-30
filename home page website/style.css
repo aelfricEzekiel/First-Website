@@ -592,3 +592,23 @@ button:hover {
     transform: scale(1);
     position: relative;
 }
+.gallery #check2:checked ~ .gallery-container .photo-gallery .Boning, 
+.gallery #check2:checked ~ .gallery .photo-gallery .Outing {
+    opacity: 1;
+    transform: scale(0);
+    position: absolute;
+    transition: 0s;
+}
+.gallery #check3:checked ~.gallery-container .photo-gallery .Bonding {
+    opacity: 1;
+    transform: scale(1);
+    position: relative;
+}
+.gallery #check3:checked ~.gallery-container .photo-gallery .Events,
+.gallery #check3:checked ~.gallery-container .photo-gallery .Outing{
+    opacity: 1;
+    transform: scale(0);
+    position: absolute;
+    transition: 0s;
+    
+}
