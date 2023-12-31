@@ -294,6 +294,8 @@ button:hover {
         height: 300vh;
     }
     .navbar ul li {
+        position: relative;
+        right: -40px;
         display: flex;
         flex-direction: column;
         padding: 10px 0;
