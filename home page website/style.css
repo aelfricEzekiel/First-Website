@@ -390,7 +390,7 @@ button:hover {
 }
 .about-image {
     flex: 1;
-    margin-right: 40px;
+    margin: 0 50px;
     overflow: hidden;
 }
 .about-image img {
@@ -449,7 +449,7 @@ button:hover {
         flex-direction: column;
     }
     .about-image {
-        margin-right: 0px;
+        margin-right: 20px;
         margin-bottom: 20px;
     }
     .about-content {
