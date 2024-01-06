@@ -141,7 +141,6 @@ button:hover {
     grid-template-columns: repeat(3, 1fr);
     grid-gap: 50px;
     margin: 25px auto;
-
 }
 /* Card 1 */
 .blog-section .section-content .cards .card {
@@ -299,7 +298,7 @@ button:hover {
 @media screen and (max-width: 768px){
     .banner {
         width: 100%;
-        height: 300vh;
+        height: 100vh;
     }
     .navbar ul li {
         position: relative;
